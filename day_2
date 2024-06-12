@@ -1,0 +1,9 @@
+# pedimos al usuario un numero a multiplicar
+numero = int(input("introduce un número para generar su tabla de multiplicar: "))
+
+# genera una tabla de multiplicar del 1 al 10
+print(f"tabla de multiplicar del numero {numero}:")
+  
+# cálculo
+for i in range(1, 11):
+    print(f"{numero} x {i} = {numero * i}")
