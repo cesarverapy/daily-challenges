@@ -1,0 +1,16 @@
+# se le pide al usuario que ingrese una palabra
+palabra = input('Ingrese una palabra: ')
+
+def invertir_caracteres(cadena_de_caracteres):
+    # si la cadena es 0, se imprime la cadena vacia
+    if len(cadena_de_caracteres) == 0:
+        return ""
+    # tomamos el último caracter y llamamos recursivamente con el resto de la cadena
+    else:
+        return cadena_de_caracteres[-1] + invertir_caracteres(cadena_de_caracteres[:-1])
+
+# se invierte la cadena que fue ingresada anteriormente por el usuario
+resultado = invertir_caracteres(palabra)
+
+# se imprime el resultado
+print(resultado)
